@@ -15,16 +15,17 @@ const AnecdoteForm = (props) => {
 
   return(
     <div>
-    <h3>add new anecdote</h3>
-    <form onSubmit={handleNewAnecdote}>
-      <input name="anecdote" />
-      <button type="submit">add</button>
-    </form>
+      <h3>add new anecdote</h3>
+      <form onSubmit={handleNewAnecdote}>
+        <input name="anecdote" />
+        <button type="submit">add</button>
+      </form>
     </div>
   )
 }
 
+// eslint-disable-next-line react-redux/connect-prefer-named-arguments
 export default connect(
   null,
-  { addAnecdote, setNotification}
+  { addAnecdote, setNotification }
 )(AnecdoteForm)

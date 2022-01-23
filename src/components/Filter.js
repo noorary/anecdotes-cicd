@@ -15,12 +15,13 @@ const Filter = (props) => {
 
   return (
     <div style={style}>
-      filter anecdotes 
+      filter anecdotes
       <input name='filter' onChange={handleChange}></input>
     </div>
   )
 }
 
+// eslint-disable-next-line react-redux/connect-prefer-named-arguments
 export default connect(
   null,
   { setFilter }
