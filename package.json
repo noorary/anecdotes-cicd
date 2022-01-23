@@ -21,7 +21,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server db.json --port 3001",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "cypress:open": "cypress open",
+    "test:e2e": "cypress run",
+    "start-prod": "node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^9.3.1",
     "eslint": "^6.8.0",
     "eslint-plugin-react-redux": "^3.3.4",
     "redux-devtools-extension": "^2.13.8"
