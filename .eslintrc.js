@@ -49,6 +49,7 @@ module.exports = {
     ],
     'no-console': 0,
     'react/prop-types': 0,
-    'no-case-declarations': 0
+    'no-case-declarations': 0,
+    'connect-prefer-named-arguments': 0
   }
 }
